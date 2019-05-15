@@ -12,8 +12,9 @@
 		1C7DD46F228BE75400E626EB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7DD46D228BE75400E626EB /* Main.storyboard */; };
 		1C7DD471228BE75500E626EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C7DD470228BE75500E626EB /* Assets.xcassets */; };
 		1C7DD474228BE75500E626EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C7DD472228BE75500E626EB /* LaunchScreen.storyboard */; };
-		1C7DD47F228BE75500E626EB /* ModelingEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD47E228BE75500E626EB /* ModelingEntityTests.swift */; };
-		1C7DD48A228BE75500E626EB /* ModelingEntityUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD489228BE75500E626EB /* ModelingEntityUITests.swift */; };
+		1C7DD498228BE7BB00E626EB /* CoffeeMaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C7DD497228BE7BB00E626EB /* CoffeeMaker.swift */; };
+		1CD50153228C032C006D04F6 /* Machine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD50152228C032C006D04F6 /* Machine.swift */; };
+		1CD50155228C052F006D04F6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CD50154228C052E006D04F6 /* RoundedButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,11 +43,10 @@
 		1C7DD473228BE75500E626EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1C7DD475228BE75500E626EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7DD47A228BE75500E626EB /* ModelingEntityTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelingEntityTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C7DD47E228BE75500E626EB /* ModelingEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelingEntityTests.swift; sourceTree = "<group>"; };
-		1C7DD480228BE75500E626EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C7DD485228BE75500E626EB /* ModelingEntityUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ModelingEntityUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1C7DD489228BE75500E626EB /* ModelingEntityUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelingEntityUITests.swift; sourceTree = "<group>"; };
-		1C7DD48B228BE75500E626EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1C7DD497228BE7BB00E626EB /* CoffeeMaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoffeeMaker.swift; sourceTree = "<group>"; };
+		1CD50152228C032C006D04F6 /* Machine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Machine.swift; sourceTree = "<group>"; };
+		1CD50154228C052E006D04F6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -78,8 +78,6 @@
 			isa = PBXGroup;
 			children = (
 				1C7DD468228BE75400E626EB /* ModelingEntity */,
-				1C7DD47D228BE75500E626EB /* ModelingEntityTests */,
-				1C7DD488228BE75500E626EB /* ModelingEntityUITests */,
 				1C7DD467228BE75400E626EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -97,32 +95,17 @@
 		1C7DD468228BE75400E626EB /* ModelingEntity */ = {
 			isa = PBXGroup;
 			children = (
+				1C7DD497228BE7BB00E626EB /* CoffeeMaker.swift */,
 				1C7DD469228BE75400E626EB /* AppDelegate.swift */,
 				1C7DD46B228BE75400E626EB /* ViewController.swift */,
+				1CD50154228C052E006D04F6 /* RoundedButton.swift */,
 				1C7DD46D228BE75400E626EB /* Main.storyboard */,
+				1CD50152228C032C006D04F6 /* Machine.swift */,
 				1C7DD470228BE75500E626EB /* Assets.xcassets */,
 				1C7DD472228BE75500E626EB /* LaunchScreen.storyboard */,
 				1C7DD475228BE75500E626EB /* Info.plist */,
 			);
 			path = ModelingEntity;
-			sourceTree = "<group>";
-		};
-		1C7DD47D228BE75500E626EB /* ModelingEntityTests */ = {
-			isa = PBXGroup;
-			children = (
-				1C7DD47E228BE75500E626EB /* ModelingEntityTests.swift */,
-				1C7DD480228BE75500E626EB /* Info.plist */,
-			);
-			path = ModelingEntityTests;
-			sourceTree = "<group>";
-		};
-		1C7DD488228BE75500E626EB /* ModelingEntityUITests */ = {
-			isa = PBXGroup;
-			children = (
-				1C7DD489228BE75500E626EB /* ModelingEntityUITests.swift */,
-				1C7DD48B228BE75500E626EB /* Info.plist */,
-			);
-			path = ModelingEntityUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,7 +240,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1C7DD46C228BE75400E626EB /* ViewController.swift in Sources */,
+				1CD50155228C052F006D04F6 /* RoundedButton.swift in Sources */,
+				1CD50153228C032C006D04F6 /* Machine.swift in Sources */,
 				1C7DD46A228BE75400E626EB /* AppDelegate.swift in Sources */,
+				1C7DD498228BE7BB00E626EB /* CoffeeMaker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -265,7 +251,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C7DD47F228BE75500E626EB /* ModelingEntityTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,7 +258,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C7DD48A228BE75500E626EB /* ModelingEntityUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
